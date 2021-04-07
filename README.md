@@ -42,11 +42,9 @@ Versione Angular: ~10.2.4
 
 Accesso zeplin:
 
-  https://app.zeplin.io/
-  
-  user: acaprino
-  
-  password: Z&5CUqn43tH&
+  - https://app.zeplin.io/
+  - user: acaprino
+  - password: Z&5CUqn43tH&
   
 
 ## Creazione di un componente 
