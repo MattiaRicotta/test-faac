@@ -27,13 +27,19 @@ Altre informazioni su questo design e su come utilizzarlo al meglio possono esse
 ## Sviluppo
 Per sviluppare in parallelo utilizzeremo la metodologia git, seguendo il gitflow mostrato nell'immagine seguente
 
-![alt text](https://iamchuka.com/content/images/2018/05/gitflowimage.png)
+Flusso branches principali:
+![alt text](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow/01-master-develop.png)
+Flusso branches secondari (feature/hotfix):
+![alt text](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow/01-master-develop.png)
 
 Ecco una breve spiegazione del flusso:
 1. Per iniziare a sviluppare si crea un branch partendo da develop e lo si chiama con il nome del componente che si vuole realizzare (Es. feature/buttons)
-2. Si sviluppa sul branch creato e una volta terminato si fa il merge del proprio branch con develop
+2. Si sviluppa sul branch creato e una volta terminato si fa il merge del proprio branch con develop.
 3. Dopo aver fatto il merge in develop, si testa se la propria modifica funziona e se non ci sono stati conflitti o regressioni causate da quest'ultimo. Se questa verifica da esisto negativo si ritorna sul proprio branch, si effettuano le correzzioni e si procede ad un nuovo merge.
-4. In caso di esito positivo si effettua il merge del branch develop in master 
+4. In caso di esito positivo si effettua il merge del branch develop in master e si cancella il proprio branch feature/nomefeature.
+5. Se è necessario effettuare un hotfix in master si crea un nuovo branch nominato hotfix/nomefix partendo da master. Una volta corretto l'errore si effettua il merge con master e develop, successivamente si cancella il branch hotfix/nomefix.
+
+Ulteriori informazioni qui: https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow/.
 
 Il branch master è collegato ad un sistema di continuous integration:
 Ogni push in quel branch avvierà una build automatica che, se completata senza errori, integrerà le nostre modifiche sul seguente indirizzo: https://enhancers-design-sistem.web.app/
