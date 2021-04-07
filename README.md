@@ -1,4 +1,4 @@
-# EnhancersDesignSistem
+# EnhancersDesignSystem
 
 Lo scopo di questo progetto è quello di creare una libreria grafica utilizzando Angular come framework e StoryBook come tool di documentazione. 
 E' possibile vedere i componenti che dovranno essere realizzati al seguente link: https://miro.com/app/board/o9J_lNFwJaQ=/
