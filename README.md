@@ -51,7 +51,9 @@ Accesso zeplin:
   - https://app.zeplin.io/
   - user: acaprino
   - password: Z&5CUqn43tH&
-  
+
+Jira: https://enhancers-design-system.atlassian.net/
+
 ## Best practice
 Scrivete commenti, e codice esclusivamente in inglese.
 
