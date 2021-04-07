@@ -52,6 +52,8 @@ Accesso zeplin:
   - user: acaprino
   - password: Z&5CUqn43tH&
   
+## Best practice
+Scrivete commenti, e codice esclusivamente in inglese.
 
 ## Creazione di un componente 
 I nuovi componenti possono essere generati da riga di comando spostandosi sulla directory del progetto e digitando `ng generate component components/tipo-componente/nome-component`
