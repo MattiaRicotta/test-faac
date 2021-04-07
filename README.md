@@ -38,7 +38,12 @@ Ecco una breve spiegazione del flusso:
 Il branch master è collegato ad un sistema di continuous integration:
 Ogni push in quel branch avvierà una build automatica che, se completata senza errori, integrerà le nostre modifiche sul seguente indirizzo: https://enhancers-design-sistem.web.app/
 
+Versione Angular: ~10.2.4
 
+Accesso zeplin:
+  https://app.zeplin.io/
+  user: acaprino
+  password: Z&5CUqn43tH&
 
 ## Creazione di un componente 
 I nuovi componenti possono essere generati da riga di comando spostandosi sulla directory del progetto e digitando `ng generate component components/tipo-componente/nome-component`
