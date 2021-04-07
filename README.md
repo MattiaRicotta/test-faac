@@ -41,6 +41,7 @@ Ogni push in quel branch avvierà una build automatica che, se completata senza 
 Versione Angular: ~10.2.4
 
 Accesso zeplin:
+
   https://app.zeplin.io/
   user: acaprino
   password: Z&5CUqn43tH&
