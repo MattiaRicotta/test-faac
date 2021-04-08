@@ -46,6 +46,13 @@ Ogni push in quel branch avvierà una build automatica che, se completata senza 
 
 Versione Angular: ~10.2.4
 
+## Accessi
+NPM
+
+ - mail: services@nigithor.com
+ - user: nigithor
+ - pwd: g8Yw7WaRa3@5
+
 Accesso zeplin:
 
   - https://app.zeplin.io/
