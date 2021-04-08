@@ -42,6 +42,127 @@
           }
         }
       }
+    },
+    "ds-demo": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/ds-demo",
+      "sourceRoot": "projects/ds-demo/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ds-demo",
+            "index": "projects/ds-demo/src/index.html",
+            "main": "projects/ds-demo/src/main.ts",
+            "polyfills": "projects/ds-demo/src/polyfills.ts",
+            "tsConfig": "projects/ds-demo/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/ds-demo/src/favicon.ico",
+              "projects/ds-demo/src/assets"
+            ],
+            "styles": [
+              "projects/ds-demo/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/ds-demo/src/environments/environment.ts",
+                  "with": "projects/ds-demo/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ds-demo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ds-demo:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ds-demo:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ds-demo/src/test.ts",
+            "polyfills": "projects/ds-demo/src/polyfills.ts",
+            "tsConfig": "projects/ds-demo/tsconfig.spec.json",
+            "karmaConfig": "projects/ds-demo/karma.conf.js",
+            "assets": [
+              "projects/ds-demo/src/favicon.ico",
+              "projects/ds-demo/src/assets"
+            ],
+            "styles": [
+              "projects/ds-demo/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ds-demo/tsconfig.app.json",
+              "projects/ds-demo/tsconfig.spec.json",
+              "projects/ds-demo/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/ds-demo/e2e/protractor.conf.js",
+            "devServerTarget": "ds-demo:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "ds-demo:serve:production"
+            }
+          }
+        }
+      }
     }},
   "defaultProject": "enhancers-design-system"
 }
