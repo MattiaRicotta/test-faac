@@ -71,37 +71,28 @@ Per buildare la libreria avviare lo script ng build-ds. E' necessario fare la bu
 Per fare la build per la pubblicazione su npm avviare lo script ng build-ds-prod.
 
 ## Creazione di un elemento del ds
-I nuovi elementi del DS si generano creando prima il relativo modulo con `ng g m projects/enhancers-design-system/src/lib/components/components/nome-modulo`.
+I nuovi elementi del DS si generano creando prima il relativo modulo con:
+- `ng g m /components/nome-componente`.
 
 Successivamente creando il componente/direttiva con i rispettivi comandi:
-- `ng g c projects/enhancers-design-system/src/lib/components/nome-component`
-- `ng g d projects/enhancers-design-system/src/lib/components/nome-direttiva`
+- `ng g c components/nome-componente/nome-componente --flat --prefix=eds --inline-template`
+- `ng g d components/nome-componente/nome-componente --flat --prefix=eds --inline-template`
 
-Ad esempio l'atomo "button" è stato generato con i comandi (forma breve):
-- `ng g m projects/enhancers-design-system/src/lib/components/button'
-- `ng g c projects/enhancers-design-system/src/lib/components/button --inline-template=true --module=true`
 
 Questo comando genererà 4 file:
-- nome-componente.component.html > Dove andremo a scrivere il nostro html 
+- nome-componente.module.ts > Modulo del componente 
 - nome-componente.component.scss > Qui scriveremo il nostro codice scss
 - nome-componente.component.ts > Qui scriveremo la logica del componente
 - nome-componente.component.spec-ts -> Per eseguire degli unit test
 
-Ogni componente deve avere un file nome-componente.module.ts, chiamato modulo, elemento che permetterà a chi utilizzerà la libreria in futuro di importare solo quel determinato componente. Il modulo può essere creato con `ng generate module components/tipo-componente/nome-component` oppure con la sua forma breve `ng g m components/tipo-componente/nome-component`.
-Questo file dovrà poi importare al suo interno il componente realizzato.
+Ogni componente avrà un file nome-componente.module.ts, chiamato modulo, elemento che permetterà a chi utilizzerà la libreria in futuro di importare solo quel determinato componente. Automaticamente il file importerà al suo interno il componente realizzato.
 
 La console di generazione dei componenti/moduli (La angular cli) è progettata in modo da importare i componenti generati nel modulo più vicino, quindi il mio consiglio è quello di generare prima il modulo e successivamente il componente in modo da avere tutto pronto con solo due righe di comando.
-
-Prendendo in considerazione l'esempio di prima, il modo migliore per generare il componete button è il seguente:
-1. `ng g m components/atoms/button`
-2. `ng g c components/atoms/button`
-
 
 ## Creazione elemento su storybook
 Per creare la documentazione del componente su storybook è sufficiente creare un file chiamato nome-component.stories.ts all'interno della directory del componente, e inserire al suo interno le specifiche del componente.
 
 Ulteriori informazioni possono essere trovare qui: https://storybook.js.org/docs/angular/writing-stories/introduction
-
 
 ## Development server
 Dopo averlo scaricato, per avviare il nostro progetto è fondamentale installare le dipendenze, è possibile farlo con il comando `npm install`. Bisogna tenere presente che per eseguire questo comando bisogna che sul nostro terminale sia posizionato sul root del progetto e che sul nostro pc sia installato node.
