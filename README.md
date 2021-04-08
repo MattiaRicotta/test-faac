@@ -1,4 +1,4 @@
-# EnhancersDesignSystem
+# Enhancers-Design-System
 
 Lo scopo di questo progetto è quello di creare una libreria grafica utilizzando Angular come framework e StoryBook come tool di documentazione. 
 E' possibile vedere i componenti che dovranno essere realizzati al seguente link: https://miro.com/app/board/o9J_lNFwJaQ=/
@@ -74,9 +74,9 @@ Per fare la build per la pubblicazione su npm avviare lo script ng build-ds-prod
 I nuovi elementi del DS si generano creando prima il relativo modulo con:
 - `ng g m /components/nome-componente`.
 
-Successivamente creando il componente/direttiva con i rispettivi comandi:
-- `ng g c components/nome-componente/nome-componente --flat --prefix=eds --inline-template`
-- `ng g d components/nome-componente/nome-componente --flat --prefix=eds --inline-template`
+Successivamente creando il componente/direttiva (in base al caso d'uso) con i rispettivi comandi:
+- `ng g c components/nome-componente/nome-componente --flat --prefix=eds --inline-template --style=scss --export`
+- `ng g d components/nome-componente/nome-componente --flat --prefix=eds --export`
 
 
 Questo comando genererà 4 file:
@@ -88,6 +88,12 @@ Questo comando genererà 4 file:
 Ogni componente avrà un file nome-componente.module.ts, chiamato modulo, elemento che permetterà a chi utilizzerà la libreria in futuro di importare solo quel determinato componente. Automaticamente il file importerà al suo interno il componente realizzato.
 
 La console di generazione dei componenti/moduli (La angular cli) è progettata in modo da importare i componenti generati nel modulo più vicino, quindi il mio consiglio è quello di generare prima il modulo e successivamente il componente in modo da avere tutto pronto con solo due righe di comando.
+
+E' necessario creare nella root del componente un file `public-api.ts` dove indichiamo i moduli/componenti/direttive/pipe/servizi da esportare.
+Aggiungere anche nel `public-api.ts` di root della libreria quello precedentemente dichiarato.
+
+## Demo
+L'app ds-demo verrà utilizzata per lo showcase e il deploy del DS su storybook
 
 ## Creazione elemento su storybook
 Per creare la documentazione del componente su storybook è sufficiente creare un file chiamato nome-component.stories.ts all'interno della directory del componente, e inserire al suo interno le specifiche del componente.
