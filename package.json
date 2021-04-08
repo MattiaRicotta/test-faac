@@ -1,5 +1,5 @@
 {
-  "name": "enhancers-design-system",
+  "name": "@nigithor/enhancers-design-system",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,6 +12,9 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "repository": {
+    "url": "git://github.com/nigithor/enhancers-design-system.git"
+  },
   "dependencies": {
     "@angular/animations": "~10.2.4",
     "@angular/common": "~10.2.4",
