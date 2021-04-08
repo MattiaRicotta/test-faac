@@ -11,7 +11,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "repository": {
     "url": "git://github.com/nigithor/enhancers-design-system.git"
   },
