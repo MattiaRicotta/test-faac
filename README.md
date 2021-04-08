@@ -56,11 +56,12 @@ Jira: https://enhancers-design-system.atlassian.net/
 
 ## Best practice
 Scrivete commenti, e codice esclusivamente in inglese.
+I messaggi sulle commit devono essere chiari e scritti in italiano.
 
 ## Build libreria
 Per buildare la libreria avviare lo script ng build-ds. E' necessario fare la build prima di avviare il progetto di demo.
 
-Per buildarla per la pubblicazione su npm avviare lo script ng build-ds-prod.
+Per fare la build per la pubblicazione su npm avviare lo script ng build-ds-prod.
 
 ## Creazione di un componente 
 I nuovi componenti possono essere generati da riga di comando spostandosi sulla directory del progetto e digitando `ng generate component components/tipo-componente/nome-component`
