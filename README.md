@@ -63,10 +63,16 @@ Per buildare la libreria avviare lo script ng build-ds. E' necessario fare la bu
 
 Per fare la build per la pubblicazione su npm avviare lo script ng build-ds-prod.
 
-## Creazione di un componente 
-I nuovi componenti possono essere generati da riga di comando spostandosi sulla directory del progetto e digitando `ng generate component components/tipo-componente/nome-component`
+## Creazione di un elemento del ds
+I nuovi elementi del DS si generano creando prima il relativo modulo con `ng g m projects/enhancers-design-system/src/lib/components/components/nome-modulo`.
 
-Ad esempio l'atomo "button" è stato generato con il comando (forma breve) `ng g c components/atoms/button`
+Successivamente creando il componente/direttiva con i rispettivi comandi:
+- `ng g c projects/enhancers-design-system/src/lib/components/nome-component`
+- `ng g d projects/enhancers-design-system/src/lib/components/nome-direttiva`
+
+Ad esempio l'atomo "button" è stato generato con i comandi (forma breve):
+- `ng g m projects/enhancers-design-system/src/lib/components/button'
+- `ng g c projects/enhancers-design-system/src/lib/components/button --inline-template=true --module=true`
 
 Questo comando genererà 4 file:
 - nome-componente.component.html > Dove andremo a scrivere il nostro html 
