@@ -111,3 +111,12 @@ Accesso zeplin:
   - password: Z&5CUqn43tH&
 
 Jira: https://enhancers-design-system.atlassian.net/
+
+# Import libreria
+ - Creare un nuovo progetto npm tramite il comando 'npm init'
+ - Creare il file .npmrc all'interno della stessa cartella contenente il package.json (dovrebbe essere creato di default nei progetti npm)
+ - Inserire all'interno del file .npmrc le seguenti righe:
+   - //npm.pkg.github.com/:_authToken=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
+   - @nigithor:registry=https://npm.pkg.github.com
+ - Inserire all'interno del package.json la dipendenza: "@nigithor/enhancers-design-system": "0.0.1" (creare l'oggetto dependencies se non esistente '"dependencies": {...}')
+ - Eseguire il comando 'npm install'
