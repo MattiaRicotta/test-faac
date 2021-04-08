@@ -65,7 +65,12 @@ Jira: https://enhancers-design-system.atlassian.net/
 Scrivete commenti, e codice esclusivamente in inglese.
 I messaggi sulle commit devono essere chiari e scritti in italiano.
 
-## Build libreria
+## Libreria
+# Guida
+ - https://medium.com/@andreasonny83/angular-component-library-the-definitive-guide-91b43ac5e3af
+ - https://medium.com/@nikolasleblanc/building-an-angular-4-component-library-with-the-angular-cli-and-ng-packagr-53b2ade0701e
+ 
+# Build
 Per buildare la libreria avviare lo script ng build-ds. E' necessario fare la build prima di avviare il progetto di demo.
 
 Per fare la build per la pubblicazione su npm avviare lo script ng build-ds-prod.
