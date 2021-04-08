@@ -29,6 +29,7 @@ Per sviluppare in parallelo utilizzeremo la metodologia git, seguendo il gitflow
 
 Flusso branches principali:
 ![alt text](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow/01-master-develop.png)
+
 Flusso branches secondari (feature/hotfix):
 ![alt text](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow/01-master-develop.png)
 
