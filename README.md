@@ -44,38 +44,11 @@ Ulteriori informazioni qui: https://www.git-tower.com/learn/git/ebook/en/command
 Il branch master è collegato ad un sistema di continuous integration:
 Ogni push in quel branch avvierà una build automatica che, se completata senza errori, integrerà le nostre modifiche sul seguente indirizzo: https://enhancers-design-sistem.web.app/
 
-Versione Angular: ~10.2.4
-
-## Accessi
-NPM
-
- - mail: services@nigithor.com
- - user: nigithor
- - pwd: g8Yw7WaRa3@5
-
-Accesso zeplin:
-
-  - https://app.zeplin.io/
-  - user: acaprino
-  - password: Z&5CUqn43tH&
-
-Jira: https://enhancers-design-system.atlassian.net/
-
 ## Best practice
 Scrivete commenti, e codice esclusivamente in inglese.
 I messaggi sulle commit devono essere chiari e scritti in italiano.
 
-## Libreria
-# Guida
- - https://medium.com/@andreasonny83/angular-component-library-the-definitive-guide-91b43ac5e3af
- - https://medium.com/@nikolasleblanc/building-an-angular-4-component-library-with-the-angular-cli-and-ng-packagr-53b2ade0701e
- 
-# Build
-Per buildare la libreria avviare lo script ng build-ds. E' necessario fare la build prima di avviare il progetto di demo.
-
-Per fare la build per la pubblicazione su npm avviare lo script ng build-ds-prod.
-
-## Creazione di un elemento del ds
+## Creazione di un elemento del DS
 I nuovi elementi del DS si generano creando prima il relativo modulo con:
 - `ng g m /components/nome-componente`.
 
@@ -97,16 +70,43 @@ La console di generazione dei componenti/moduli (La angular cli) è progettata i
 E' necessario creare nella root del componente un file `public-api.ts` dove indichiamo i moduli/componenti/direttive/pipe/servizi da esportare.
 Aggiungere anche nel `public-api.ts` di root della libreria quello precedentemente dichiarato.
 
-## Demo
-L'app ds-demo verrà utilizzata per lo showcase e il deploy del DS su storybook
-
 ## Creazione elemento su storybook
-Per creare la documentazione del componente su storybook è sufficiente creare un file chiamato nome-component.stories.ts all'interno della directory del componente, e inserire al suo interno le specifiche del componente.
+Per creare la documentazione del componente su storybook è sufficiente creare un file chiamato nome-componente.stories.ts all'interno della directory del componente, e inserire al suo interno le specifiche del componente.
 
 Ulteriori informazioni possono essere trovare qui: https://storybook.js.org/docs/angular/writing-stories/introduction
 
-## Development server
+
+# Libreria
+## Guida
+ - https://medium.com/@andreasonny83/angular-component-library-the-definitive-guide-91b43ac5e3af
+ - https://medium.com/@nikolasleblanc/building-an-angular-4-component-library-with-the-angular-cli-and-ng-packagr-53b2ade0701e
+ 
+## Build
+Per buildare la libreria avviare lo script ng build-ds. E' necessario fare la build prima di avviare il progetto di demo.
+Per fare la build per la pubblicazione su npm avviare lo script ng build-ds-prod.
+
+Versione Angular: ~10.2.4
+
+
+## Development server app `ds-demo`
+L'app ds-demo verrà utilizzata per lo showcase e il deploy del DS su storybook
+
 Dopo averlo scaricato, per avviare il nostro progetto è fondamentale installare le dipendenze, è possibile farlo con il comando `npm install`. Bisogna tenere presente che per eseguire questo comando bisogna che sul nostro terminale sia posizionato sul root del progetto e che sul nostro pc sia installato node.
 
 - Per avviare il progetto angular sul nostro browser bisogna lanciare il comando `ng serve` 
 - Per avviare storybook sul nostro browser è sufficiente lanciare il comando `npm run storybook` all'interno della directory del progetto
+
+# Accessi
+NPM
+
+ - mail: services@nigithor.com
+ - user: nigithor
+ - pwd: g8Yw7WaRa3@5
+
+Accesso zeplin:
+
+  - https://app.zeplin.io/
+  - user: acaprino
+  - password: Z&5CUqn43tH&
+
+Jira: https://enhancers-design-system.atlassian.net/
