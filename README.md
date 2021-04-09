@@ -120,3 +120,15 @@ Jira: https://enhancers-design-system.atlassian.net/
    - @nigithor:registry=https://npm.pkg.github.com
  - Inserire all'interno del package.json la dipendenza: "@nigithor/enhancers-design-system": "0.0.1" (creare l'oggetto dependencies se non esistente '"dependencies": {...}')
  - Eseguire il comando 'npm install'
+ 
+ # Generazione Token GitHub
+  - Andare al seguente link https://github.com/settings/tokens;
+  - Accedere con le proprie credenziali GitHub
+  - Cliccare sul pulsante 'create new token'
+  - Selezionare le voci: 
+    - repo
+    - delete:packages
+    - write: packages
+  - Cliccare su 'generate token'
+  
+  Il token generato può essere usato nel file .npmrc dopo la voce //npm.pkg.github.com/:_authToken={TOKEN_GENERATO}
