@@ -112,7 +112,7 @@ Accesso zeplin:
 
 Jira: https://enhancers-design-system.atlassian.net/
 
-# Import libreria
+# Import libreria [Guida](https://docs.github.com/en/packages/learn-github-packages/about-github-packages)
  - Creare un nuovo progetto npm tramite il comando 'npm init'
  - Creare il file .npmrc all'interno della stessa cartella contenente il package.json (dovrebbe essere creato di default nei progetti npm)
  - Inserire all'interno del file .npmrc le seguenti righe:
