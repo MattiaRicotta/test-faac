@@ -41,6 +41,11 @@
             ]
           }
         }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
       }
     },
     "ds-demo": {
@@ -163,6 +168,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "enhancers-design-system"
 }

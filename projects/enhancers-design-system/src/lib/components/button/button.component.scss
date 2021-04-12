@@ -1,7 +1,8 @@
-.ciao{
-  background: yellow;
+.button{
+  background: #2ff0ff;
 
-  &.ok{
-    color: #1976d2;
+  &.disabled{
+    background: #e5e5e5;
+    color: #828282;
   }
 }

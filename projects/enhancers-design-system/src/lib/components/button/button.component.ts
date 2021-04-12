@@ -3,7 +3,7 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'eds-button',
   template: `
-    <button class="ciao ok">Bottone</button> `,
+    <button class="ciao button disabled">Button</button> `,
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
