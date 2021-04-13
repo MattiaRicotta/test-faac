@@ -2,13 +2,77 @@
 /*-------------------- COLORS --------------------*/
 /*------------------------------------------------*/
 
-// P100
-$color-p-100: #2ec4b6;
+// Primary
+$primary-300: #022862;
+$primary-400: #033b90;
+$primary-500B: #054ebe;
+$primary-600: #4078cd;
+$primary-700: #7ca2dd;
+$primary-800: #d9e4f5;
 
-// P200
-$color-p-200: #28ab9f;
+// B&W
+$black: #000;
+$grey-300: #282828;
+$grey-400: #666666;
+$grey-500B: #7f7f7f;
+$grey-600: #cccccc;
+$grey-700: #f0f0f0;
+$white: #ffffff;
+
+// Data visualization colors
+$dt-1: #cd6154;
+$dt-2: #5499c7;
+$dt-3: #52be80;
+$dt-4: #ea984f;
+$dt-5: #99a3a4;
+$dt-6: #ae78c4;
+$dt-7: #7b241b;
+$dt-8: #51c9b0;
+$dt-9: #566673;
+$dt-10: #633a74;
+$dt-11: #f4d03f;
+$dt-12: #cacfd2;
+$dt-13: #235275;
+$dt-14: #266f3d;
+$dt-15: #935216;
+$dt-16: #515a5a;
+$dt-17: #2d7864;
+$dt-18: #18202a;
+$dt-19: #997c0c;
+$dt-20: #797d7f;
 
 $colors: (
-  p100: $color-p-100,
-  p200: $color-p-200
+  primary-300: #022862,
+  primary-400: #033b90,
+  primary-500B: #054ebe,
+  primary-600: #4078cd,
+  primary-700: #7ca2dd,
+  primary-800: #d9e4f5,
+  black: #000,
+  grey-300: #282828,
+  grey-400: #666666,
+  grey-500B: #7f7f7f,
+  grey-600: #cccccc,
+  grey-700: #f0f0f0,
+  white: #ffffff,
+  dt-1: #cd6154,
+  dt-2: #5499c7,
+  dt-3: #52be80,
+  dt-4: #ea984f,
+  dt-5: #99a3a4,
+  dt-6: #ae78c4,
+  dt-7: #7b241b,
+  dt-8: #51c9b0,
+  dt-9: #566673,
+  dt-10: #633a74,
+  dt-11: #f4d03f,
+  dt-12: #cacfd2,
+  dt-13: #235275,
+  dt-14: #266f3d,
+  dt-15: #935216,
+  dt-16: #515a5a,
+  dt-17: #2d7864,
+  dt-18: #18202a,
+  dt-19: #997c0c,
+  dt-20: #797d7f,
 );
