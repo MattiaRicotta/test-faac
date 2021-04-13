@@ -73,6 +73,7 @@
               "projects/ds-demo/src/assets"
             ],
             "styles": [
+              "dist/enhancers-design-system/_eds.scss",
               "projects/ds-demo/src/styles.scss"
             ],
             "scripts": []

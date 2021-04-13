@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4300",
     "build": "ng build",
     "build-ds": "ng build enhancers-design-system && npm run build:scss",
     "build-ds-prod": "ng build enhancers-design-system --prod && npm run build:scss",
