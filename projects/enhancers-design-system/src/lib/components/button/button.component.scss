@@ -1,8 +1,9 @@
+@import '../../common/abstract/colors';
 .button{
-  background: #2ff0ff;
+  background: $primary-300;
 
   &.disabled{
-    background: #e5e5e5;
-    color: #828282;
+    background: $grey-400;
+    color: $grey-700;
   }
 }

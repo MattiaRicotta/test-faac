@@ -1,0 +1,55 @@
+/*------------------------------------------------*/
+/*-------------------- FUNCTIONS -------------------*/
+/*------------------------------------------------*/
+// Function for removing units of a value
+// eg. 1px --> 1
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+// Function to px to rem or rem to px
+/// @param {pixels unit} eg: 16px
+/// @return {rem unit} eg: 1rem
+// eg:
+// .class {
+//  font-size: calc-rem(16px); // 1rem when default value 16px
+// }
+@function calc-rem($value) {
+  $font-new: strip-units($html-font-size);
+  @if type-of($value)=="number" {
+    @if (unitless($value)) {
+      @return ($value / $font-new);
+    } @else if unit($value)=="rem" {
+      @return #{($value / 1rem)*$font-new}px;
+    } @else if unit($value)=="px" {
+      @return #{($value / 1px)/$font-new}rem;
+    }
+  } @else {
+    @warn "Not a number value: #{$value}";
+    @return $value;
+  }
+}
+
+
+// Function to px to em or em to px
+/// @param {pixels unit} eg: 16px
+/// @return {rem unit} eg: 1rem
+// eg:
+// .class {
+//  font-size: calc-rem(16px); // 1em when default value 16px
+// }
+@function calc-em($value) {
+  $font-new: strip-units($html-font-size);
+  @if type-of($value)=="number" {
+    @if (unitless($value)) {
+      @return $value;
+    } @else if unit($value)=="em" {
+      @return #{($value / 1em)*$font-new}px;
+    } @else if unit($value)=="px" {
+      @return #{($value / 1px)/$font-new}em;
+    }
+  } @else {
+    @warn "Not a number value: #{$value}";
+    @return $value;
+  }
+}

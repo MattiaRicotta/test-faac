@@ -5,9 +5,11 @@
 // Abstract
 @import "abstract/colors";
 @import "abstract/variables";
+@import "abstract/functions";
 
 // Base
 @import "base/normalize";
+@import "base/font";
 
 // Shame
 @import "shame";
