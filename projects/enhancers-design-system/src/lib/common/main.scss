@@ -2,5 +2,12 @@
 /*--------------- SCSS ARCHITETURE ---------------*/
 /*------------------------------------------------*/
 
+// Abstract
 @import "abstract/colors";
 @import "abstract/variables";
+
+// Base
+@import "base/normalize";
+
+// Shame
+@import "shame";
