@@ -3,8 +3,5 @@
  */
 
 // Button
-export * from './lib/components/button/public-api';
+export * from './lib/components/atoms/button/public-api';
 
-
-// Button
-export * from './lib/components/nome-componente/public-api';

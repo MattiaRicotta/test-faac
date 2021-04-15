@@ -89,8 +89,8 @@ Per fare la build per la pubblicazione su npm avviare lo script ng build-ds-prod
 Versione Angular: ~10.2.4
 
 
-## Development server app `ds-demo`
-L'app ds-demo verrà utilizzata per lo showcase e il deploy del DS su storybook
+## Development server app `ds-storybook`
+L'app ds-storybook verrà utilizzata per lo showcase e il deploy del DS su storybook
 
 Dopo averlo scaricato, per avviare il nostro progetto è fondamentale installare le dipendenze, è possibile farlo con il comando `npm install`. Bisogna tenere presente che per eseguire questo comando bisogna che sul nostro terminale sia posizionato sul root del progetto e che sul nostro pc sia installato node.
 

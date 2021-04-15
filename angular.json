@@ -5,6 +5,11 @@
   "projects": {
     "enhancers-design-system": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/enhancers-design-system",
       "sourceRoot": "projects/enhancers-design-system/src",
       "prefix": "lib",
@@ -43,32 +48,32 @@
         }
       }
     },
-    "ds-demo": {
+    "ds-storybook": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/ds-demo",
-      "sourceRoot": "projects/ds-demo/src",
+      "root": "projects/ds-storybook",
+      "sourceRoot": "projects/ds-storybook/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ds-demo",
-            "index": "projects/ds-demo/src/index.html",
-            "main": "projects/ds-demo/src/main.ts",
-            "polyfills": "projects/ds-demo/src/polyfills.ts",
-            "tsConfig": "projects/ds-demo/tsconfig.app.json",
+            "outputPath": "dist/ds-storybook",
+            "index": "projects/ds-storybook/src/index.html",
+            "main": "projects/ds-storybook/src/main.ts",
+            "polyfills": "projects/ds-storybook/src/polyfills.ts",
+            "tsConfig": "projects/ds-storybook/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/ds-demo/src/favicon.ico",
-              "projects/ds-demo/src/assets"
+              "projects/ds-storybook/src/favicon.ico",
+              "projects/ds-storybook/src/assets"
             ],
             "styles": [
-              "projects/ds-demo/src/styles.scss"
+              "projects/ds-storybook/src/styles.scss"
             ],
             "scripts": []
           },
@@ -76,8 +81,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/ds-demo/src/environments/environment.ts",
-                  "with": "projects/ds-demo/src/environments/environment.prod.ts"
+                  "replace": "projects/ds-storybook/src/environments/environment.ts",
+                  "with": "projects/ds-storybook/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -106,33 +111,33 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ds-demo:build"
+            "browserTarget": "ds-storybook:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ds-demo:build:production"
+              "browserTarget": "ds-storybook:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ds-demo:build"
+            "browserTarget": "ds-storybook:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ds-demo/src/test.ts",
-            "polyfills": "projects/ds-demo/src/polyfills.ts",
-            "tsConfig": "projects/ds-demo/tsconfig.spec.json",
-            "karmaConfig": "projects/ds-demo/karma.conf.js",
+            "main": "projects/ds-storybook/src/test.ts",
+            "polyfills": "projects/ds-storybook/src/polyfills.ts",
+            "tsConfig": "projects/ds-storybook/tsconfig.spec.json",
+            "karmaConfig": "projects/ds-storybook/karma.conf.js",
             "assets": [
-              "projects/ds-demo/src/favicon.ico",
-              "projects/ds-demo/src/assets"
+              "projects/ds-storybook/src/favicon.ico",
+              "projects/ds-storybook/src/assets"
             ],
             "styles": [
-              "projects/ds-demo/src/styles.scss"
+              "projects/ds-storybook/src/styles.scss"
             ],
             "scripts": []
           }
@@ -141,9 +146,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ds-demo/tsconfig.app.json",
-              "projects/ds-demo/tsconfig.spec.json",
-              "projects/ds-demo/e2e/tsconfig.json"
+              "projects/ds-storybook/tsconfig.app.json",
+              "projects/ds-storybook/tsconfig.spec.json",
+              "projects/ds-storybook/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -153,16 +158,20 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/ds-demo/e2e/protractor.conf.js",
-            "devServerTarget": "ds-demo:serve"
+            "protractorConfig": "projects/ds-storybook/e2e/protractor.conf.js",
+            "devServerTarget": "ds-storybook:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ds-demo:serve:production"
+              "devServerTarget": "ds-storybook:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "enhancers-design-system"
+    }
+  },
+  "defaultProject": "ds-storybook",
+  "cli": {
+    "analytics": "5fffabee-0b47-485c-8628-10f050c381f7"
+  }
 }
