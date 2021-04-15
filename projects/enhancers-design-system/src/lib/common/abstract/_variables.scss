@@ -1,6 +1,29 @@
 /*------------------------------------------------*/
 /*------------------ VARIABLES -------------------*/
 /*------------------------------------------------*/
+// Typography
+// Font size for root forced to be 16
+// for keeping DS sizes across different browser/devices
+$root-font-size: 16px; // 1rem = 16px
 
-// FONTS
-$html-font-size: 16px;
+$font-family: 'Inter';
+
+$font-family-light-path: 'src/assets/fonts/inter-v3-latin-300';
+$font-family-regular-path: 'src/assets/fonts/inter-v3-latin-regular';
+$font-family-bold-path: 'src/assets/fonts/inter-v3-latin-700';
+
+// Font sizes
+$font-x-large: 2rem; //32px
+$font-large: 1.5rem; // 24px
+$font-regular: 1rem; // 16px
+$font-medium: 1.25rem; // 20px
+$font-small: 0.875rem; //14px
+$font-tiny: 0.75rem; // 12px
+
+// Components sizes
+$small: .6rem;
+$default: 1rem;
+$large: 1.4rem;
+
+
+

@@ -1,6 +1,47 @@
 /*------------------------------------------------*/
 /*------------------- FONTS ----------------------*/
 /*------------------------------------------------*/
-html{
-  font-size: $html-font-size;
+
+// Fonts face
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url($font-family-light-path + '.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($font-family-light-path + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url($font-family-light-path + '.woff2') format('woff2'), /* Super Modern Browsers */
+  url($font-family-light-path + '.woff') format('woff'), /* Modern Browsers */
+  url($font-family-light-path + '.ttf') format('truetype'), /* Safari, Android, iOS */
+  url($font-family-light-path + '.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url($font-family-regular-path + '.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($font-family-regular-path + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url($font-family-regular-path + '.woff2') format('woff2'), /* Super Modern Browsers */
+  url($font-family-regular-path + '.woff') format('woff'), /* Modern Browsers */
+  url($font-family-regular-path + '.ttf') format('truetype'), /* Safari, Android, iOS */
+  url($font-family-regular-path + '.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url($font-family-bold-path + '.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url($font-family-bold-path + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url($font-family-bold-path + '.woff2') format('woff2'), /* Super Modern Browsers */
+  url($font-family-bold-path + '.woff') format('woff'), /* Modern Browsers */
+  url($font-family-bold-path + '.ttf') format('truetype'), /* Safari, Android, iOS */
+  url($font-family-bold-path + '.svg#Inter') format('svg'); /* Legacy iOS */
 }

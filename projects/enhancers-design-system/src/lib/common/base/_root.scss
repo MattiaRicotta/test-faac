@@ -1,0 +1,95 @@
+:root{
+  // Variables
+  --root-font-size: 16px; // 1rem = 16px
+
+  --font-family: 'Inter';
+
+  --font-family-light-path: 'src/assets/fonts/inter-v3-latin-300';
+  --font-family-regular-path: 'src/assets/fonts/inter-v3-latin-regular';
+  --font-family-bold-path: 'src/assets/fonts/inter-v3-latin-700';
+
+  // Font sizes
+  --font-x-large: 2rem; //32px
+  --font-large: 1.5rem; // 24px
+  --font-regular: 1rem; // 16px
+  --font-medium: 1.25rem; // 20px
+  --font-small: 0.875rem; //14px
+  --font-tiny: 0.75rem; // 12px
+
+  // Components sizes
+  --small: .6rem;
+  --default: 1rem;
+  --large: 1.4rem;
+
+  // Colors
+  // Primary
+  --primary-300: #022862;
+  --primary-400: #033b90;
+  --primary-500B: #054ebe;
+  --primary-600: #4078cd;
+  --primary-700: #7ca2dd;
+  --primary-800: #d9e4f5;
+
+  // B&W
+  --black: #000;
+  --grey-300: #282828;
+  --grey-400: #666666;
+  --grey-500B: #7f7f7f;
+  --grey-600: #cccccc;
+  --grey-700: #f0f0f0;
+  --white: #ffffff;
+
+  // Data visualization
+  --dv-1: #cd6154;
+  --dv-1B: #7b241b;
+  --dv-2: #5499c7;
+  --dv-2B: #235275;
+  --dv-3: #52be80;
+  --dv-3B: #266f3d;
+  --dv-4: #935216;
+  --dv-4B: #ea984f;
+  --dv-5: #99a3a4;
+  --dv-5B: #18202a;
+  --dv-6: #ae78c4;
+  --dv-6B: #633a74;
+  --dv-7: #51c9b0;
+  --dv-7B: #2d7864;
+  --dv-8: #566673;
+  --dv-8B: #515a5a;
+  --dv-9: #f4d03f;
+  --dv-9B: #997c0c;
+  --dv-10: #cacfd2;
+  --dv-10B: #797d7f;
+
+  // Danger
+  --danger-300: #821515;
+  --danger-400: #be1f1f;
+  --danger-500B: #fa2929;
+  --danger-600: #fb5c5c;
+  --danger-700: #fc9090;
+  --danger-800: #fee9e9;
+
+  // Info
+  --info-300: #0d3980;
+  --info-400: #1354bb;
+  --info-500B: #1a6ff7;
+  --info-600: #5091f8;
+  --info-700: #87b3fa;
+  --info-800: #e7f0fe;
+
+  // Warning
+  --warning-300: #856300;
+  --warning-400: #c19000;
+  --warning-500B: #ffbf00;
+  --warning-600: #ffce3d;
+  --warning-700: #ffdd7b;
+  --warning-800: #fff8e5;
+
+  // Success
+  --success-300: #1a701f;
+  --success-400: #27a42e;
+  --success-500B: #34d93d;
+  --success-600: #65e26c;
+  --success-700: #95eb99;
+  --success-800: #ebfbeb;
+}
