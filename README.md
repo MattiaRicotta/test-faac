@@ -54,7 +54,7 @@ I nuovi elementi del DS si generano creando prima il relativo modulo con:
 - `ng g m /components/nome-componente`.
 
 Successivamente creando il componente/direttiva (in base al caso d'uso) con i rispettivi comandi:
-- `ng g c components/nome-componente/nome-componente --flat --prefix=eds --inline-template --style=scss --export`
+- `ng g c components/nome-componente/nome-componente --flat --prefix=eds --inline-template --export`
 - `ng g d components/nome-componente/nome-componente --flat --prefix=eds --export`
 
 

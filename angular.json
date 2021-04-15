@@ -73,6 +73,7 @@
               "projects/ds-storybook/src/assets"
             ],
             "styles": [
+              "dist/enhancers-design-system/_eds.scss",
               "projects/ds-storybook/src/styles.scss"
             ],
             "scripts": []

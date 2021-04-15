@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4300",
     "build": "ng build",
-    "build-ds": "ng build enhancers-design-system",
-    "build-ds-prod": "ng build enhancers-design-system --prod",
+    "build-ds": "ng build enhancers-design-system && npm run build:scss",
+    "build-ds-prod": "ng build enhancers-design-system --prod && npm run build:scss",
+    "build:scss": "scss-bundle -c ./scss-bundle.config.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -27,6 +28,7 @@
     "@types/jest": "^26.0.22",
     "@types/mocha": "^8.2.2",
     "rxjs": "~6.6.0",
+    "scss-bundle": "^3.1.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
