@@ -50,13 +50,22 @@ Scrivete commenti, e codice esclusivamente in inglese.
 I messaggi sulle commit devono essere chiari e scritti in italiano.
 
 ## Creazione di un elemento del DS
+:warning: **Eseguire questi comandi solo all'interno della cartella projects/enhancers-design-system**
+
+
 I nuovi elementi del DS si generano creando prima il relativo modulo con:
-- `ng g m /components/nome-componente`.
+- `ng g m /src/lib/components/{tipoComponente}/{nomeComponente}`
 
 Successivamente creando il componente/direttiva (in base al caso d'uso) con i rispettivi comandi:
-- `ng g c components/nome-componente/nome-componente --flat --prefix=eds --inline-template --export`
-- `ng g d components/nome-componente/nome-componente --flat --prefix=eds --export`
+- `ng g component /src/lib/components/{tipoComponente}/{nomeComponente}/{nomeComponente} --flat --inline-template --export`
+- `ng g d /src/lib/components/{tipoComponente}/{nomeComponente}/{nomeComponente} --flat --export`
 
+Opzionalmente il componente può essere generato inglobando il codice HTML dentro il ts (Utile nei componenti con poco HTML).
+Per farlo basta aggiungere `--inline-template` al comando di generazione del componente.
+
+Ad esempio il componente card può essere creato digitando semplicemente i due comandi seguenti:
+- `ng g m /src/lib/components/atoms/card`
+- `ng g c /src/lib/components/atoms/card/card --flat --export`
 
 Questo comando genererà 4 file:
 - nome-componente.module.ts > Modulo del componente 

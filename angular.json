@@ -12,7 +12,7 @@
       },
       "root": "projects/enhancers-design-system",
       "sourceRoot": "projects/enhancers-design-system/src",
-      "prefix": "lib",
+      "prefix": "eds",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
